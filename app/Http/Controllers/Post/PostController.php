@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function showHomePage()
+    {
+        return view('post.home');
+    }
+
     public function showPostCreateForm(): View
     {
         return view('post.postForm');
